@@ -2,8 +2,22 @@
 #! /bin/bash -x
 
 echo "Welcome to the coin combination programm...."
-declare -A Dict
+
+
+
 read -p  "Enter to Flip a coin"
+        x=$((RANDOM%2))
+
+        if [ $x -eq 0 ]
+
+        then
+                echo "HEAD"
+        else
+                echo "TAIL"
+        fi
+
+declare -A Dict
+
 for ((i=1;i<=6;i++))
 do
 
